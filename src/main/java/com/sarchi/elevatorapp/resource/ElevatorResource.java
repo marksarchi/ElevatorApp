@@ -31,7 +31,7 @@ public class ElevatorResource {
         return service.requestElevator(request);
     }
 
-    @GetMapping("/logs")
+    @GetMapping("/status")
     public ResponseEntity<List<ElevatorEntity>> fetchElevatorStatus() {
         return service.fetchElevatorStatus();
     }
