@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:dcbapp
+    driverClassName: org.h2.Driver
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: 'true'
+
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+twilio:
+  account_sid: ACfd8a86c7521720896fad19d39bc6f522
+  token: 985155845414683c3183a3b1f646fece
+  trial_number: +14849897916
+
+server:
+  port: 8089
